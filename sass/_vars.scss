@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+$width: 736px;
+$table_width: 528px;
+$mobile_width: 315px;
+$color: #ffffff;
+
+@mixin poppins_font($font_weight, $font_size, $line_height) {
+  font-family: "Poppins", sans-serif;
+  font-weight: $font_weight;
+  font-style: normal;
+  font-size: $font_size;
+  line-height: $line_height;
+}
+
+@mixin white_line($width, $height, $top, $left) {
+  position: absolute;
+  width: $width;
+  height: $height;
+  background-color: $color;
+  top: $top;
+  left: $left;
+}
