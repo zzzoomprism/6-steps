@@ -1,5 +1,256 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+.first_step_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.first_step_block__images {
+  position: relative;
+  width: 194.11px;
+  height: 100%;
+}
+
+.first_step_block__images .digit {
+  position: absolute;
+  width: 138.5px;
+  height: 365px;
+  top: 9.95px;
+  left: 169px;
+}
+
+.first_step_block__images .chart {
+  position: absolute;
+  width: 194.11px;
+  height: 348px;
+  top: 321.95px;
+  left: 53px;
+}
+
+.first_step_block__images .house__checked {
+  position: absolute;
+  width: 144.81px;
+  height: 152px;
+  top: 565.95px;
+  left: -3.81px;
+}
+
+.first_step__description {
+  min-height: 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 736px;
+          flex: 0 0 736px;
+  text-align: justify;
+  margin-top: 83.95px;
+  z-index: 1;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.first_step__description p {
+  margin-bottom: 32px;
+}
+
+.first_step__description p:first-child {
+  margin-top: 32px;
+}
+
+.first_step__description .first_step_description__text {
+  height: 636px;
+}
+
+.first_step__description:last-child {
+  margin-bottom: 32px;
+}
+
+.check_now__button {
+  min-height: 200px;
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 66px;
+}
+
+.check_now__button a {
+  height: 96px;
+}
+
+.check_now__button:before {
+  content: "";
+  position: absolute;
+  width: 312px;
+  height: 324px;
+  top: -204px;
+  left: 0px;
+  background-image: url(../images/transparent_rectangle.svg);
+}
+
+.check_now__button:before {
+  top: -248px;
+}
+
+.check_now__button:after {
+  content: "";
+  position: absolute;
+  width: 274px;
+  height: 176px;
+  top: 0;
+  left: 118px;
+  background-image: url(../images/curve_line.svg);
+}
+
+@media screen and (max-width: 900px) {
+  .first_step_block__images {
+    min-height: 433px;
+    width: 100%;
+  }
+  .first_step_block__images:before {
+    content: "";
+    position: absolute;
+    width: 324px;
+    height: 324px;
+    top: 126px;
+    left: -64px;
+    background-image: url(../images/tablet_rectangle.svg);
+  }
+  .first_step_block__images:after {
+    content: "";
+    position: absolute;
+    width: 290.11px;
+    height: 348px;
+    top: 48px;
+    left: 0;
+    background-image: url(../images/tablet_chart_house.svg);
+  }
+  .first_step_block__images {
+    min-height: 324px;
+  }
+  .first_step_block__images .digit {
+    top: 251px;
+    left: auto;
+    right: 137.5px;
+  }
+  .chart,
+  .arrow_link,
+  .house__checked {
+    display: none;
+  }
+  .first_step_block {
+    min-height: 100%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .first_step__description {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 528px;
+            flex: 0 0 528px;
+    position: relative;
+    width: calc(100% - 60px);
+    min-height: 752px;
+    max-height: 1000px p;
+    max-height-margin-bottom: 20px;
+  }
+  .first_step_description__text {
+    height: 464px !important;
+  }
+  .check_now__button {
+    margin-top: 0px !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-height: 400px;
+  }
+  .check_now__button:after {
+    content: "";
+    position: absolute;
+    width: 176px;
+    height: 881px;
+    top: -704px;
+    left: 40px;
+    background-image: url(../images/tablet_curve_line.svg);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .digit,
+  .chart,
+  .house__checked {
+    display: none !important;
+  }
+  .arrow_link {
+    display: none !important;
+  }
+  .first_step_block__images {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .first_step_block__images:before {
+    content: "";
+    position: absolute;
+    width: 315px;
+    height: 315px;
+    top: 126px;
+    left: 30px;
+    background-image: url(../images/mobile_first_step_rectange.svg);
+  }
+  .first_step_block__images:after {
+    width: 261.11px;
+    height: 348px;
+    left: 57px;
+    background-image: url(../images/mobile_chart_house.svg);
+  }
+  .first_step_block {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .first_step__description {
+    max-height: 1000px;
+    min-width: 315px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(100% - 30px);
+            flex: 0 0 calc(100% - 30px);
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: left;
+  }
+  .check_now__button:before {
+    display: none;
+  }
+  .check_now__button:after {
+    display: none;
+  }
+}
+
 html {
   font-size: 42px;
 }
@@ -52,14 +303,6 @@ select {
   font: inherit;
 }
 
-p {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 26px;
-  line-height: 42px;
-}
-
 h1,
 h2 {
   font-family: "Poppins", sans-serif;
@@ -69,11 +312,58 @@ h2 {
   line-height: 48px;
 }
 
+h3,
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 33px;
+  line-height: 40px;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.btn_round {
+  position: relative;
+  min-width: 304px;
+  min-height: 96px;
+  text-decoration: none;
+  border: 2px solid #b9ff9c;
+  color: #b9ff9c;
+  padding: 32px 97px 32px 55px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 85px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 2%;
+}
+
+.btn_round:after {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 32px;
+  right: 32px;
+  background-image: url(../images/arrow-right.svg);
+}
+
 .container {
-  width: calc(100% - 160px);
+  width: calc(100%);
   float: left;
   height: 100%;
   padding-left: 160px;
+  padding-right: 160px;
   padding-top: 50px;
 }
 
@@ -120,6 +410,11 @@ header img {
 .text_description {
   height: 126px;
   margin-top: 48px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 26px;
+  line-height: 42px;
 }
 
 .good-news__section {
@@ -151,6 +446,11 @@ header img {
           align-items: center;
 }
 
+.arrow_link .arrow_link__image {
+  width: 31.15px;
+  height: 31.15px;
+}
+
 @media screen and (max-width: 900px) {
   h1,
   h2 {
@@ -160,7 +460,8 @@ header img {
     font-size: 33px;
     line-height: 40px;
   }
-  p {
+  p,
+  .text_description {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -168,8 +469,9 @@ header img {
     line-height: 24px;
   }
   .container {
-    width: calc(100% - 64px);
+    width: calc(100%);
     padding-left: 64px;
+    padding-right: 64px;
     padding-top: 40px;
   }
   header {
@@ -246,10 +548,10 @@ header img {
     line-height: 24px;
   }
   .container {
-    width: calc(100% - 64px);
-    height: 100vh;
-    padding-left: 64px;
-    padding-top: 40px;
+    width: calc(100% - 40px);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 17.5px;
   }
   .headline {
     width: 315px;
@@ -278,26 +580,27 @@ header img {
     line-height: 28px;
   }
   header img {
-    top: 172px;
+    top: 216px;
     right: -64px;
-    width: 188px;
-    height: 404px;
+    width: 126px;
+    height: 202px;
   }
   .good-news__section {
-    width: 315px;
+    width: 204px;
   }
   .text_description {
     height: 72px;
     margin-top: 32px;
   }
   .news__section__subtitle {
+    width: 204px;
     margin-top: 54px;
     margin-bottom: 30px;
   }
   .news__section__subtitle:after {
     content: "";
     position: absolute;
-    width: 315px;
+    width: 204px;
     height: 1px;
     background-color: #ffffff;
     top: 32px;

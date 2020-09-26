@@ -1,5 +1,5 @@
 @import "vars";
-
+@import "first_step";
 //common-container
 // header
 //headline
@@ -56,20 +56,52 @@ select {
   font: inherit;
 }
 
-p {
-  @include poppins_font(400, 26px, 42px);
-}
-
 h1,
 h2 {
   @include poppins_font(700, 1rem, 48px);
 }
 
+h3,
+h4 {
+  @include poppins_font(700, 33px, 40px);
+}
+
+h5 {
+}
+
+p {
+  @include poppins_font(400, 20px, 32px);
+}
+
+.btn_round {
+  position: relative;
+  min-width: 304px;
+  min-height: 96px;
+  text-decoration: none;
+  border: 2px solid #b9ff9c;
+  color: #b9ff9c;
+  padding: 32px 97px 32px 55px;
+  box-sizing: border-box;
+  border-radius: 85px;
+  @include poppins_font(400, 26px, 30px);
+  letter-spacing: 2%;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 32px;
+    right: 32px;
+    background-image: url(../images/arrow-right.svg);
+  }
+}
+
 .container {
-  width: calc(100% - 160px);
+  width: calc(100%);
   float: left;
   height: 100%;
   padding-left: 160px;
+  padding-right: 160px;
   padding-top: 50px;
 }
 header {
@@ -102,6 +134,7 @@ header img {
 .text_description {
   height: 126px;
   margin-top: 48px;
+  @include poppins_font(400, 26px, 42px);
 }
 
 .good-news__section {
@@ -123,6 +156,10 @@ header img {
   display: flex;
   justify-content: center;
   align-items: center;
+  .arrow_link__image {
+    width: 31.15px;
+    height: 31.15px;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -130,12 +167,14 @@ header img {
   h2 {
     @include poppins_font(700, 33px, 40px);
   }
-  p {
+  p,
+  .text_description {
     @include poppins_font(400, 16px, 24px);
   }
   .container {
-    width: calc(100% - 64px);
+    width: calc(100%);
     padding-left: 64px;
+    padding-right: 64px;
     padding-top: 40px;
   }
   header {
@@ -190,17 +229,17 @@ header img {
     @include poppins_font(400, 16px, 24px);
   }
   .container {
-    width: calc(100% - 64px);
-    height: 100vh;
-    padding-left: 64px;
-    padding-top: 40px;
+    width: calc(100% - 40px);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 17.5px;
   }
   .headline {
     width: $mobile_width;
     height: 56px;
     &:after {
       content: "";
-      @include white_line($mobile_width, 2px, 70px, 0px);
+      @include white_line(315px, 2px, 70px, 0px);
     }
   }
   .headline__title {
@@ -214,13 +253,13 @@ header img {
   }
 
   header img {
-    top: 172px;
+    top: 216px;
     right: -64px;
-    width: 188px;
-    height: 404px;
+    width: 126px;
+    height: 202px;
   }
   .good-news__section {
-    width: $mobile_width;
+    width: 204px;
   }
   .text_description {
     height: 72px;
@@ -228,11 +267,12 @@ header img {
   }
 
   .news__section__subtitle {
+    width: 204px;
     margin-top: 54px;
     margin-bottom: 30px;
     &:after {
       content: "";
-      @include white_line($mobile_width, 1px, 32px, 0px);
+      @include white_line(204px, 1px, 32px, 0px);
     }
   }
 }
