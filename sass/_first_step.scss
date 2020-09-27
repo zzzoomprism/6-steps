@@ -5,6 +5,7 @@
 .first_step_block {
   display: flex;
   flex-direction: row;
+  -moz-flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -92,7 +93,6 @@
 }
 
 @media screen and (max-width: 900px) {
-  ///FIRST STEP
   .first_step_block__images {
     min-height: 433px;
     width: 100%;
@@ -127,7 +127,7 @@
   .chart,
   .arrow_link,
   .house__checked {
-    display: none;
+    display: none !important;
   }
   .first_step_block {
     min-height: 100%;
@@ -136,10 +136,10 @@
   .first_step__description {
     flex: 0 0 $table_width;
     position: relative;
-
     width: calc(100% - 60px);
     min-height: 752px;
-    max-height: 1000px p {
+    max-height: 1000px;
+    p {
       margin-bottom: 20px;
     }
   }
@@ -163,7 +163,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 730px) {
   .digit,
   .chart,
   .house__checked {
@@ -175,7 +175,9 @@
   .first_step_block__images {
     width: 100%;
     display: flex;
+
     flex-direction: row;
+    -moz-flex-direction: row;
     justify-content: center;
     &:before {
       content: "";
@@ -196,16 +198,27 @@
 
   .first_step_block {
     justify-content: flex-start;
+    padding-right: 0;
   }
   .first_step__description {
-    max-height: 1000px;
-    min-width: 315px;
-    flex: 0 0 calc(100% - 30px);
+    margin-bottom: 0 !important;
+    position: relative;
+    min-height: 100%;
+    flex: 0 0 100%;
     flex-wrap: wrap;
     text-align: left;
+    min-width: 315px;
+    &:before {
+      content: "1.";
+      @include poppins_font(700, 33px, 40px);
+    }
   }
-
+  .first_step_description__text {
+    height: 100% !important;
+  }
   .check_now__button {
+    position: relative;
+    margin-top: 32px !important;
     &:before {
       display: none;
     }
