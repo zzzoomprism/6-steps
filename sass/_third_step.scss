@@ -34,3 +34,17 @@
     background-size: 480px 168px;
   }
 }
+
+@media screen and (max-width: 992px) {
+  .third__step_block {
+    flex-wrap: nowrap;
+  }
+  .third__step_block__images {
+    min-height: 433px;
+    width: 100%;
+    .third_digit {
+      @include absolute_background(254px, 376.5px, 45px, auto);
+      right: 80px;
+    }
+  }
+}
