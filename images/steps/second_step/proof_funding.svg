@@ -1,0 +1,11 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.2" d="M57.8125 4C57.8125 1.79086 59.6034 0 61.8125 0H153.674C154.724 0 155.732 0.41296 156.48 1.14973L198.806 42.8248C199.57 43.5766 200 44.6034 200 45.675V196C200 198.209 198.209 200 196 200H61.8125C59.6034 200 57.8125 198.209 57.8125 196V4Z" fill="white"/>
+<path opacity="0.2" fill-rule="evenodd" clip-rule="evenodd" d="M200 45.675C200 46.959 198.959 47.9999 197.675 47.9999H155.25C153.041 47.9999 151.25 46.209 151.25 43.9999V2.42372C151.25 1.08514 152.335 0 153.674 0C154.724 0 155.732 0.41296 156.48 1.14973L198.806 42.8248C199.57 43.5766 200 44.6034 200 45.675Z" fill="white"/>
+<rect opacity="0.2" x="92.1875" y="103.125" width="67.1875" height="12.5" rx="4" fill="white"/>
+<rect opacity="0.2" x="92.1875" y="79.6875" width="67.1875" height="12.5" rx="4" fill="white"/>
+<rect opacity="0.2" x="139.062" y="126.562" width="20.3125" height="12.5" rx="4" fill="white"/>
+<g opacity="0.7">
+<circle cx="58.5938" cy="110.156" r="57.5938" stroke="white" stroke-width="2"/>
+<path d="M68 105.063L56.7071 116.355C56.3166 116.746 55.6834 116.746 55.2929 116.355L50 111.063" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

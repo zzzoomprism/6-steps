@@ -1,5 +1,6 @@
 @import "vars";
 @import "first_step";
+@import "second_step";
 //common-container
 // header
 //headline
@@ -96,6 +97,33 @@ p {
   }
 }
 
+.btn_default {
+  display: flex;
+  align-items: center;
+  width: 320px;
+  height: 128px;
+  position: relative;
+  padding: 32px 112px 31px 35px;
+  color: $color;
+  text-decoration: none;
+  @include poppins_font(700, 26px, 30px);
+  color: #b9ff9c;
+  letter-spacing: 2%;
+  background: radial-gradient(
+    115.14% 323.83% at -16.67% -110.94%,
+    rgba(167, 146, 255, 0.4) 0%,
+    rgba(146, 76, 235, 0) 100%
+  );
+  border-radius: 27px;
+  .btn_default_icon {
+    position: absolute;
+    width: 50px;
+    height: 65px;
+    top: 31px;
+    right: 40px;
+  }
+}
+
 .container {
   width: calc(100%);
   float: left;
@@ -162,6 +190,32 @@ header img {
   }
 }
 
+.step_block_item {
+  display: flex;
+  flex-direction: row;
+  -moz-flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.step_block_item__text {
+  min-height: 100%;
+  flex: 0 0 $width;
+  text-align: justify;
+  margin-top: 83.95px;
+  z-index: 1;
+  @include poppins_font(700, 20px, 32px);
+  p {
+    margin-bottom: 32px;
+    &:first-child {
+      margin-top: 32px;
+    }
+  }
+  &:last-child {
+    margin-bottom: 32px;
+  }
+}
+
 @media screen and (max-width: 900px) {
   h1,
   h2 {
@@ -216,6 +270,16 @@ header img {
     &:after {
       content: "";
       @include white_line($table_width, 1px, 32px, 0px);
+    }
+  }
+  .step_block_item__text {
+    flex: 0 0 $table_width;
+    position: relative;
+    width: calc(100% - 60px);
+    min-height: 752px;
+    max-height: 1000px;
+    p {
+      margin-bottom: 20px;
     }
   }
 }
@@ -273,6 +337,20 @@ header img {
     &:after {
       content: "";
       @include white_line(204px, 1px, 32px, 0px);
+    }
+  }
+
+  .step_block_item__text {
+    margin-bottom: 0 !important;
+    position: relative;
+    min-height: 100%;
+    flex: 0 0 100%;
+    flex-wrap: wrap;
+    text-align: left;
+    min-width: 315px;
+    &:before {
+      content: "1.";
+      @include poppins_font(700, 33px, 40px);
     }
   }
 }
