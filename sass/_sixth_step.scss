@@ -1,0 +1,21 @@
+@import "vars";
+
+.sixth_block {
+  height: 658px;
+  margin-top: 84px;
+}
+
+.sixth_step_block__images {
+  position: relative;
+  min-width: 250px;
+  height: 100%;
+
+  .sixth_digit {
+    @include absolute_background(261.5px, 374.5px, -140px, auto);
+    right: 261.5px;
+  }
+  .certificate {
+    @include absolute_background(200px, 233px, 108px, auto);
+    right: 128px;
+  }
+}

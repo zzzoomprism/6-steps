@@ -8,25 +8,13 @@
   height: 100%;
 
   .digit {
-    position: absolute;
-    width: 138.5px;
-    height: 365px;
-    top: 9.95px;
-    left: 169px;
+    @include absolute_background(138.5px, 365px, 9.95px, 169px);
   }
   .chart {
-    position: absolute;
-    width: 194.11px;
-    height: 348px;
-    top: 321.95px;
-    left: 53px;
+    @include absolute_background(194.11px, 348px, 321.95px, 53px);
   }
   .house__checked {
-    position: absolute;
-    width: 144.81px;
-    height: 152px;
-    top: 565.95px;
-    left: -3.81px;
+    @include absolute_background(144.81px, 152px, 565.95px, -3.81px);
   }
 }
 
@@ -42,24 +30,16 @@
   }
   &:before {
     content: "";
-    position: absolute;
-    width: 312px;
-    height: 324px;
-    top: -204px;
-    left: 0px;
-    background-image: url(../images/transparent_rectangle.svg);
+    @include absolute_background(312px, 324px, -204px, 0);
+    background-image: url(../images/steps/first_step/transparent_rectangle.svg);
   }
   &:before {
     top: -248px;
   }
   &:after {
     content: "";
-    position: absolute;
-    width: 274px;
-    height: 176px;
-    top: 0;
-    left: 118px;
-    background-image: url(../images/curve_line.svg);
+    @include absolute_background(274px, 176px, 0, 118px);
+    background-image: url(../images/steps/first_step/curve_line.svg);
   }
 }
 
@@ -69,11 +49,8 @@
   height: 164px;
   &::after {
     content: "";
-    position: absolute;
+    @include absolute_background(480px, 168px, -25px, auto);
     right: 0;
-    top: -25px;
-    width: 480px;
-    height: 168px;
     background: url(../images/steps/first_step/arrow_down.svg);
     background-size: 480px 168px;
   }
@@ -85,21 +62,13 @@
     width: 100%;
     &:before {
       content: "";
-      position: absolute;
-      width: 324px;
-      height: 324px;
-      top: 126px;
-      left: -64px;
-      background-image: url(../images/tablet_rectangle.svg);
+      @include absolute_background(324px, 324px, 126px, -64px);
+      background-image: url(../images/steps/first_step/tablet_rectangle.svg);
     }
     &:after {
       content: "";
-      position: absolute;
-      width: 290.11px;
-      height: 348px;
-      top: 48px;
-      left: 0;
-      background-image: url(../images/tablet_chart_house.svg);
+      @include absolute_background(290.11px, 348px, 48px, 0);
+      background-image: url(../images/steps/first_step/tablet_chart_house.svg);
     }
   }
 
@@ -128,11 +97,8 @@
     &:after {
       content: "";
       position: absolute;
-      width: 176px;
-      height: 881px;
-      top: -704px;
-      left: 40px;
-      background-image: url(../images/tablet_curve_line.svg);
+      @include absolute_background(176px, 881px, -704px, 40px);
+      background-image: url(../images/steps/first_step/tablet_curve_line.svg);
     }
   }
 }
@@ -155,18 +121,12 @@
     justify-content: center;
     &:before {
       content: "";
-      position: absolute;
-      width: 315px;
-      height: 315px;
-      top: 126px;
-      left: 30px;
-      background-image: url(../images/mobile_first_step_rectange.svg);
+      @include absolute_background(315px, 315px, 126px, 30px);
+      background-image: url(../images/steps/first_step/mobile_first_step_rectange.svg);
     }
     &:after {
-      width: 261.11px;
-      height: 348px;
-      left: 57px;
-      background-image: url(../images/mobile_chart_house.svg);
+      @include absolute_background(261.11px, 348px, auto, 57px);
+      background-image: url(../images/steps/first_step/mobile_chart_house.svg);
     }
   }
 
@@ -184,5 +144,9 @@
     &:after {
       display: none;
     }
+  }
+
+  .first_step__arrow {
+    display: none;
   }
 }

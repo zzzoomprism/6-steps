@@ -2,16 +2,14 @@
 @import "first_step";
 @import "second_step";
 @import "third_step";
-//common-container
-// header
-//headline
-//good-news-section
+@import "forth_step";
+@import "fifth_step";
+@import "sixth_step";
 
 html {
   font-size: 42px;
 }
 
-/* Указываем box sizing */
 *,
 *::before,
 *::after {
@@ -47,7 +45,6 @@ a:not([class]) {
 }
 
 img {
-  max-width: 100%;
   display: block;
 }
 

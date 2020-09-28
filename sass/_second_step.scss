@@ -4,32 +4,17 @@
   height: 602px;
 
   .second_digit {
-    position: absolute;
-    width: 252px;
-    height: 368px;
-    top: -118px;
-    right: 194px;
+    @include absolute_background(252px, 368px, -118px, 194px);
   }
   .proof_funding {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    top: 240px;
-    left: 5px;
+    @include absolute_background(200px, 200px, 240px, 5px);
   }
   .transparent_rectangle {
-    position: absolute;
-    width: 293px;
-    height: 602px;
-    top: 352px;
-    left: -24px;
+    @include absolute_background(293px, 602px, 352px, 24px);
   }
   &:after {
     content: "";
-    position: absolute;
-    width: 274px;
-    height: 416px;
-    top: 448px;
+    @include absolute_background(274px, 416px, 448px, auto);
     right: 80px;
     background: url(../images/steps/second_step/rectangle_371.svg);
   }
@@ -55,11 +40,7 @@
   margin-top: 32px;
   &::after {
     content: "";
-    position: absolute;
-    left: 91px;
-    top: 0;
-    width: 425px;
-    height: 168px;
+    @include absolute_background(425px, 168px, 0, 91px);
     background: url(../images/steps/second_step/rectangle_378.svg);
     background-size: 480px 168px;
   }

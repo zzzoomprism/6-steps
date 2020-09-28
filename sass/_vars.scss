@@ -21,3 +21,11 @@ $color: #ffffff;
   top: $top;
   left: $left;
 }
+
+@mixin absolute_background($width, $height, $top, $left) {
+  position: absolute;
+  width: $width;
+  height: $height;
+  top: $top;
+  left: $left;
+}

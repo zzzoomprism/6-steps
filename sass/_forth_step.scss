@@ -1,0 +1,55 @@
+@import "vars";
+
+.forth_step_block__images {
+  position: relative;
+  min-width: 250px;
+  height: 100%;
+
+  .forth_digit {
+    @include absolute_background(294.5px, 360px, -40px, auto);
+    right: 163px;
+  }
+  .dollars__bubble {
+    @include absolute_background(250.96px, 146.69px, 192.31px, auto);
+    right: 5px;
+  }
+  .house {
+    @include absolute_background(193.48px, 192px, 348px, auto);
+    right: 4.81px;
+  }
+  .forth_step__rectangle {
+    @include absolute_background(648px, 408px, 608px, auto);
+    right: 200px;
+  }
+  &:after {
+    content: "";
+    @include absolute_background(274px, 416px, 475px, auto);
+    right: 80px;
+    background: url(../images/steps/forth_step/rectangle_382.svg);
+  }
+}
+
+.forth_step__description {
+  margin-top: -44px !important;
+}
+
+.forth_step_description_btn {
+  width: 100%;
+  height: 176px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-top: 52px;
+}
+
+.forth_step__arrow {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  margin-top: 32px;
+  &::after {
+    content: "";
+    @include absolute_background(504px, 168px, 20px, 112px);
+    background: url(../images/steps/forth_step/rectangle_376.svg);
+  }
+}
