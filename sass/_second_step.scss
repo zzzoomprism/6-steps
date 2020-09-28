@@ -4,7 +4,8 @@
   height: 602px;
 
   .second_digit {
-    @include absolute_background(252px, 368px, -118px, 194px);
+    @include absolute_background(252px, 368px, -118px, auto);
+    right: 194px;
   }
   .proof_funding {
     @include absolute_background(200px, 200px, 240px, 5px);

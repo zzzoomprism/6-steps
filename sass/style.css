@@ -226,7 +226,8 @@
   width: 252px;
   height: 368px;
   top: -118px;
-  left: 194px;
+  left: auto;
+  right: 194px;
 }
 
 .second_step_block__images .proof_funding {
